@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "assets/css/animate.css";
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700);
+@import "assets/css/css.css";
+@import "assets/css/icon.css";
+@import "assets/css/bootstrap-material-design.css";
+@import "assets/css/ripples.min.css";
+@import "assets/css/font-awesome.css";
+@import "assets/css/style.css";
+@import "assets/css/colors_01.css";
+
+ngb-typeahead-window.dropdown-menu {
+    margin-top: 5px;
+}
+
+ngb-typeahead-window.dropdown-menu > button {
+    border:none;
+    background:transparent;
+    color: black;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+ngb-typeahead-window.dropdown-menu > button:hover {
+    font-weight: bold;
+    background-color: #303F9F;
+    color: #FFFFFF;
+}
