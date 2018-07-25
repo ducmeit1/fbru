@@ -23,7 +23,7 @@ export class AppComponent implements OnInit{
     keywordArrays: string[] = new Array();
 
    ngOnInit(): void {
-      this.http.get('http://ducmeit1-001-site1.itempurl.com/api/keywords/')
+      this.http.get('http://fbruwebadmin20180726030210.azurewebsites.net/api/keywords/')
       .toPromise()
       .then(response => response.json())
       .then(response => {

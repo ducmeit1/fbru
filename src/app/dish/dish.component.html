@@ -1,0 +1,46 @@
+<section class="section">
+  <div class="container">
+    <div class="page-title text-center">
+      <h1>
+        <strong>{{ dish.name }}</strong>
+      </h1>
+      <ul class="breadcrumb">
+        <li>
+          <a routerLink="/">Home</a>
+        </li>
+        <li class="active">{{ dish.name }}</li>
+      </ul>
+    </div>
+    <!-- end title -->
+  </div>
+  <!-- end container -->
+</section>
+<!-- end section -->
+<section>
+  <div class="container" style="margin-top: 30px">
+    <div class="panel panel-default" style="padding: 20px">
+      <div class="row">
+        <div class="col-md-4">
+          <img [src]="dish.images[0].url" [alt]="dish.name" class="img-responsive" />
+        </div>
+        <div class="col-md-6">
+          <p> Name: {{ dish.name}}
+            <br /> Price: {{ dish.price}} BND
+            <br /> Restaurant: {{ dish.restaurant.name}}
+            <br /> Category: {{ dish.category.name}}
+          </p>
+          Keywords:
+          <ul class="list-group list-inline">
+            <li *ngFor="let k of dish.keywords" class="list-group-item">
+              <span class="text-success">{{ k.name}}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="row" style="margin-top: 10px;">
+        <div class="col-md-12 text-center" [innerHtml]="dish.description"></div>
+      </div>
+    </div>
+  </div>
+</section>

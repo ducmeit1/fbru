@@ -1,28 +1,45 @@
-<section class="section welcome welcome_01 bg1">
-        <div class="container">
-            <div class="row">
-                <div class="content col-md-8 col-md-offset-2">
-                    <div class="welcome-text text-center">
-                        <h1><strong>FBRU SEARCH ENGINE</strong></h1>
-                        <p>FBRU help you find places and foods in Brunei Darussalam. Love it!</p>
+<div id="wrapper">
+    <header class="header">
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" routerLink="/"><i class="material-icons">bluetooth</i> <strong>FBRU</strong></a>
                     </div>
-                    <div class="widget clearfix">
-                        <div class="panel panel-primary">
-                            <div class="panel-body">
-                                <form class="site-search">
-                                    <div class="form-group is-empty">
-                                        <input class="form-control" type="text" placeholder="How may I help you today?" [(ngModel)]="keyword" name="keyword" [ngbTypeahead]="search" />
-                                    </div>
-                                    <div class="form-group clearfix">
-                                        <div class="submit-button pull-right">
-                                            <a class="btn btn-raised btn-info gr" href="#"><i class="material-icons">search</i> Search</a>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+                    <div class="navbar-collapse navbar-responsive-collapse collapse" aria-expanded="false" style="height: 1px;">
+                        <app-navbar></app-navbar>
                     </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <router-outlet></router-outlet>
+    <div class="stickyfooter">
+        <div id="sitefooter" class="container">
+            <div id="copyright" class="row">
+                <div class="col-md-6 col-sm-12 text-left">
+                    <p>Fbru &copy 2018 by <a href="#">Ho Trong Duc</a>.</p>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <ul class="list-inline text-right">
+                        <li><a href="#">Terms of Usage</a></li>
+                        <li><a href="#">Copyrights</a></li>
+                        <li><a href="#">License</a></li>
+                        <li><a href="#">About us</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/assets/js/material.min.js"></script>
+<script src="/assets/js/ripples.min.js"></script>
+<script src="/assets/js/typeahead.bundles.js"></script>
+<script src="/assets/js/custom.js"></script>
